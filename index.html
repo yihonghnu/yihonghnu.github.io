@@ -1,0 +1,436 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" href="jemdoc.css" type="text/css" />
+<link rel="shortcut icon" href="favicon.ico" />
+<link rel="bookmark" href="favicon.ico" type="image/x-icon"　/>
+<title>Multi-module data processing and visual recognition team</title>
+<style>
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item {
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.item img {
+  width: 600px;
+  height: 400px;
+  object-fit: contain;
+}
+
+.item p {
+  margin-top: 5px;
+  font-size: 14px;
+}
+</style>
+<style>
+h1 {
+  position: relative;
+}
+
+h1::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 50px;
+  transform: translateY(-50%);
+  width: 350px;
+  height: 70px;
+  background-image: url(./img/rvc.png);
+  background-size: cover;
+}
+
+p {
+  font-size: 16px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+.picItem {
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  margin-right:20px;
+}
+
+.picItem p {
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+#layout-menu {
+  background-color:	#FCFCFC;
+  width: 200px;
+  height: 100%;
+}
+
+#layout-menu .main-menu {
+  margin: 20px 5px;
+  border-bottom: 1px solid 		#F2F2F2;
+}
+
+.menu-content div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+#layout-menu div {
+  margin-top: 20px;
+}
+
+#layout-content {
+  padding: 0 15px;
+}
+.footer {
+  display: flex;
+  align-content: center;
+  justify-content: space-around;
+  background-color: #007BB5;
+}
+</style>
+
+<style>
+  body {
+    font-family: "Times New Roman", sans-serif;
+    font-size:20px;
+    margin: 0;
+  }
+</style>
+</head>
+
+<body>
+<table summary="Table for page layout." id="tlayout">
+<tr valign="top">
+<td id="layout-menu">
+  <div class="menu-content">
+    <div>
+      <img src="./img/logo.png" style="width: 80px; height: 80px;" />
+    </div>
+<!--    <div class="main-menu"> MENU </div>-->
+    <div class="menu-item"><a href="index.html" class="current">Home</a></div>
+    <div class="menu-item"><a href="https://github.com/">GitHub</a></div>
+    <div class="menu-item"><a href="http://robot.hnu.edu.cn/">RVC Lab</a></div>
+  </div>
+</td>
+<td id="layout-content">
+<div id="toptitle">
+<h1>多模数据处理与视觉识别组</h1>
+</div>
+<hr>
+<h2>关于我们</h2>
+<p  style="text-indent: 2em;">多模数据处理与视觉识别组致力于点云数据和RGB数据的识别与处理研究。我们团队的研究领域涵盖了交通场景和电力场景，以及点云数据和RGB数据的识别与处理。
+  </p>
+  <p  style="text-indent: 2em;">
+在交通场景方面，我们关注行人检测、异常行为识别等相关问题。通过对点云数据和RGB数据进行分析和处理，提高交通场景的理解和分析能力，推动交通安全和交通效率的改善。在电力场景方面，我们专注于输电通道线路树障分析、配电网线路巡检、杆塔倾斜检测、线路异物检测和线路覆冰检测等任务。通过对红外图像和 RGB 图像融合、 点云数据和RGB 数据融合进行处理和识别。这种多模态融合的方法有助于提高对电力环境和图像场景的认知和理解能力，为电力人工智能实际应用提供更好的解决方案。
+</p>
+  <p  style="text-indent: 2em;">
+我们相信通过团队的协作和努力，我们可以在这一领域取得更多的突破和创新。让我们一起共同探索多模数据处理与视觉识别的未来！
+</p>
+
+<div style="display: flex;">
+  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+  <div class="picItem">
+    <img src=./img/traffic.png  width="500px" height="300px">
+    <p ></p>
+  </div>
+  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+  <div class="picItem">
+    <img src=./img/electricity.png width="500px" height="300px">
+    <p ></p>
+  </div>
+</div>
+<hr>
+<h2>我们的工作</h2>
+    <h3>(1) 用于配网线路的目标检测技术 [<a href="./video/v_ob2.mp4">视频1</a>][<a href="./video/v_ob2.mp4">视频2</a>]</h3>
+  <div style="display: flex;">
+  <div class="picItem">
+    <img src=./img/ob_r1.png width="400px" height="180px">
+    <p >配网部件红外图像精准检测</p>
+  </div>
+      <div class="picItem">
+    <img src=./img/ob_r2.png width="400px" height="280px">
+    <p >配网部件检测结果</p>
+  </div>
+      <div class="picItem">
+    <img src=./img/ob_a1.png width="400px" height="280px">
+    <p >输电线路异物检测</p>
+  </div>
+</div>
+<p><b>&rArr; 红外图像的热故障判别：</b>提出了一种配网部件红外图像的精准检测新方法，用于解决使用红外图像判别热故障问题时检测精度低的问题。我们共做出以下贡献：</p>
+<p><b>1.自适应配准</b>: 提出一种自适应裁剪配准的方法，计算裁剪坐标参数完成红外与可见光图像的精确配准，并且这种配准方法可以在相机变焦拍摄时自适应调整裁剪坐标。这种方法部署简单、配准效果好且具有优秀的实时性。</p>
+
+<p><b>2.检测任务转换</b>: 在完成配准的基础上提出一种检测任务转换的方法，将对配网部件红外图像的检测任务转换至高分辨率可见光图像上。将检测模型对配准后可见光图像的预测信息准确迁移至红外图像中。间接完成了对红外图像中部件的精准检测。并提出一种基于BAM注意力机制的YOLOv8目标检测方法，进一步提升检测精度。</p>
+
+<p><b>3.制作数据集</b>: 提出包括红外与可见光图像的配网典型空间部件的数据集，并通过检测任务转换的方法对配网部件红外图像达到89.8%的检测准确率。</p>
+
+<p><b>4.算法部署</b>: 将所提出的整体方法部署到湖南省电科院配网线路巡检系统，面向红外图像判别热故障问题实现配网部件红外图像的精准检测。</p>
+  <p><b>&rArr; 输电线路异物检测：</b>在这个工作中，我们设计了一种基于小样本目标检测的输电线路异物检测方法，这个方法在输电线路异物数据集上表现优异。</p>
+<p><b>1.数据采集</b>: 为了训练和测试模型，我们基于无人机平台在中国张家界地区基于同一条输电线路下不同天气、不同光照强度采集输电线路异物图像。该数据集包括套管、耐张线夹和鸟巢（即异物）三个类别，共96张静态图像，369个感兴趣目标框的手工标注。</p>
+
+<p><b>2.数据预处理</b>: 在进行训练之前，对所采集图像进行预处理，采用多尺度处理方式对数据进行训练。</p>
+
+<p><b>3.模型训练</b>: 对于数据进行预处理后，使用我们所设计方法进行训练，训练共分为两个阶段，第一阶段，采用具有大量标注信息的基类数据集上训练检测器Faster R-CNN。第二阶段，冻结训练检测器绝大部分参数，将训练好的模型迁移至新类进行微调。</p>
+
+<p><b>4.结果测试</b>: 对于我们的方法在测试集上进行测试并进行了可视化，由测试结果可以看出，我们所设计的方案可实现快速、准确检测。</p>
+  </p>&nbsp</p>
+  <h3>(2)电力场景的点云处理技术 [<a href="./video/v_cp2.mp4">视频1</a>][<a href="./video/v_cp2.mp4">视频2</a>]</h3>
+  <div style="display: flex;">
+  <div class="picItem">
+    <img src=./img/cp_tc1.jpg width="400px" height="180px">
+    <p >树木分类技术路线</p>
+  </div>
+      <div class="picItem">
+    <img src=./img/cp_tc2.jpg width="400px" height="280px">
+    <p >树木分类结果</p>
+  </div>
+      <div class="picItem">
+    <img src=./img/cp_d1.png width="400px" height="180px">
+    <p >杆塔倾斜度检测</p>
+  </div>
+</div>
+
+   <p><b>&rArr; 线路通道多光谱数据树木分类：</b></p>
+
+<p><b>1.种子点提取</b>: 数据预处理完成后，需要从点云数据中提取地面点。通过分析点云数据中的高程信息，从输电线路树木点云中提取出最高点。随机选择一定数量的代表性种子点。这些种子点将作为树木分割的起始点。</p>
+
+<p><b>2.点聚类</b>: 对于输电线路点云数据中的每个种子点，使用邻域搜索方法找到其周围的邻近点。并依据设定的点间距离、角度、颜色等特征，确定生长准则。在满足生长准则的基础上，对每个种子点进行逐步生长，形成各自对应的树木点云集合。在区域生长过程中，将相邻的点云集合进行合并，进一步形成完整的单木点云数据。</p>
+
+<p><b>3.多光谱数据集构建</b>: 对多光谱数据进行标注，构建用于分类的多光谱数据集。需要分类的树木包括樟树、松树和竹子，对于其他类型的植被，我们一律标为背景。</p>
+<p><b>4.模型训练与测试</b>: 我们将多光谱分类数据集送入到深度学习网络中进行训练，对于训练好的深度学习网络模型，再对多光谱数据进行测试。最终我们获取到了多光谱数据的类别信息。</p>
+<p><b>5.多光谱点云配准</b>: 最后利用此前单木分割后的树木信息，判断每棵树木的位置是否落入到对应的多光谱数据中对应树种的范围中。由此，我们获得了通道线路点云的单木信息，包括了树木高度、树木冠层信息和树木类别。</p>
+
+<p><b>&rArr; 电力杆塔倾斜检测：</b>提出了一种基于无人机激光点云的电力杆塔倾斜算法，根据我们制作的电力杆塔点云数据集，进行点云分割模型训练，并对分割结果进行杆塔倾斜度计算，最后对杆塔进行安全性分析。主要步骤如下：</p>
+<p><b>1.制作数据集</b>: 为了训练和测试模型，我们对通过无人机搭载激光雷达采集到的电力杆塔及周围环境的点云数据进行标注。在使用数据集进行训练之前，需要执行预处理操作。包括点云数据扩充，提取信息列，归一化等任务，以确保数据一致性和适当的格式。</p>
+
+<p><b>2.点云分割模型训练</b>: 使用预处理后的数据集，我们可以开始基于点云分割的深度学习模型进行训练。输入的点云数据将进行特征学习、特征融合等任务，最后输出杆塔点云数据分割结果。</p>
+
+<p><b>3.杆塔倾斜检测</b>: 完成点云分割模型训练后，我们将得到的分割结果进行杆塔倾斜度计算。国家规定电力杆塔倾斜度一旦超过5°就要立即进行维护检修，我们通过杆塔倾斜度算法得到的倾斜角度需要先进行准确性评估，符合准确性要求的杆塔在判断是否在安全性范围之内。</p>
+
+<p>通过以上步骤，我们就完成了基于无人机激光点云的电力杆塔倾斜检测，可以简单、高效地实现杆塔倾斜度计算，具有较强的工程实用价值。</p>
+  </p>&nbsp</p>
+   <h3>(3) 电力输电线路缺陷检测 [<a href="./video/v_safnet.mp4">视频1</a>][<a href="./video/v_pstlnet.mp4">视频2</a>]</h3>
+  <div style="display: flex;">
+  <div class="picItem">
+    <img src=./img/SaFNet.jpg width="500px" height="300px">
+    <p >基于形状感知特征优化的检测网络</p>
+  </div>
+      <div class="picItem">
+    <img src=./img/PSTLNet.jpg width="500px" height="300px">
+    <p >基于分块自纹理学习的检测网络</p>
+  </div>
+</div>
+
+<p><b>1.数据集</b>: 我们使用无人机收集了输电线路系统中的航拍图像。该数据集包含了多样的场景，包括村庄、森林和农田等。此外，该数据集共有956个原始样本，包括振动锤（pvib）、缺失减振器（pvib-miss）、玻璃绝缘子（pinsug）、陶瓷绝缘子（pinsub）、缺失绝缘子（pinsumiss）、悬挂夹具（psusp）、鸟巢（pnest）和链路组（plinkgrp）等八个类别。</p>
+
+<p><b>2.训练细节</b>: 所有实验都是在一台配备Nvidia GTX 3090显卡、24 GB内存的计算机上进行的。我们的模型是使用Python 3.8和PyTorch 1.8.0实现的，并通过CUDA 11.1.74 + cuDNN-v8.0.5进行加速。</p>
+
+<p><b>3.(1)SaFNet</b>: 首先，我们选择残差网络（如ResNet50）从输入图像中提取多尺度特征。随后，多尺度特征经过语义引导的特征擦除模块，增强了网络感知遮挡对象的能力。此外，通过特征金字塔网络对特征进行融合，可以提高对不同尺度对象的检测性能。最后，融合后的特征输入经过专门设计的形状感知特征细化模块，生成用于检测和分类的预测结果。SaFM模块可以增强网络对对象轮廓的感知，有助于定位对象。</p>
+
+  <p><b>3.(2)PSTL-Net</b>: 在提出的PSTL-Net框架中，我们将PSAM和STLM插入到ResNet中作为改进的骨干网络，从中提取具有丰富纹理信息的更具辨别力的特征。然后，FPN可以帮助网络获取语义级和像素级的信息特征，实现多尺度特征融合。最后，设计的头部网络预测分类和位置，并计算相应的损失用于反向传播。</p>
+
+<p><b>4.检测测试</b>: 通过载入训练好的网络权重，就可以实现对输电线路图像进行自动化检测，并对结果进行可视化。</p>
+  </p>&nbsp</p>
+
+  <h3>(4) 跨场景领域自适应技术 [<a href="./video/v_aras.mp4">视频</a>]</h3>
+  <div style="display: flex;">
+  <div class="picItem">
+    <img src=./img/ARAS_1.png width="400px" height="240px">
+    <p >自适应精炼-聚集-分离框架</p>
+  </div>
+
+  <div class="picItem">
+    <img src=./img/ARAS_3.png width="400px" height="200px">
+    <p>特征低维可视化</p>
+  </div>
+    <div class="picItem">
+    <img src=./img/ARAS_2.jpg width="350px" height="260px">
+    <p >在GTA5上的分割结果</p>
+  </div>
+</div>
+<p  style="text-indent: 2em;">无监督领域自适应作为解决多场景适用性差和标注困难的一种方法受到了广泛关注。它使用容易获得的有标签虚拟场景数据训练一个在无标签真实目标场景具有较好效果的分割网络。为了提高语义分割的性能，基于特征聚类的方法作为一种方案被广泛应用以获得域不变特征表示。然而，目前大多数基于特征聚类的方法无差别地对两个域中所有特征进行聚类，这会导致质心偏移和降低特征的判别性。为此，本篇工作提出了一种新的基于聚类的方法，有效地解决了聚类过程中质心估计容易偏移和特征判别性差的问题。该工作设计了一个自适应-精炼-聚合-分离框架，通过为不同的域和不同的特征设计不同的自适应方案来进行聚类以提高判别性特征的生成，且聚类过程中不需要任何预先定义的阈值。在广泛采用的两个主流无监督领域自适应语义分割场景中的实验结果表明，该项工作超越了目前所有基于特征聚类的方法，达到了最佳效果，实现了在目标场景不需要标注的情况下对输入图像的准确分割。&nbsp[<a href="https://ieeexplore.ieee.org/abstract/document/10040699/">论文</a>]&nbsp[<a href="https://github.com/yihong-97/ARAS">代码</a>]
+
+<p><b>1.任务</b>: GTA5-to-Cityscapes 和 Synthia-to-Cityscapes &nbsp(数据集：&nbsp[<a href="https://download.visinf.tu-darmstadt.de/data/from_games/">GTA5</a>]&nbsp[<a href="http://synthia-dataset.net/download/808/">Synthia</a>]&nbsp[<a href="https://www.cityscapes-dataset.com/">Cityscapes</a>])</p>
+
+  <p><b>2.代码</b>: 该项工作的代码基于Python(3.6)和Pytorch(1.7)，部分代码借鉴了<a href="https://github.com/LTTM/UDAclustering">UDAclustering</a>和<a href="https://github.com/yufei1900/DAST_segmentation">DAST_segmentation</a>。</p>
+
+<p><b>3.模型训练</b>: 我们公开了该项工作的代码，并提供了模型训练的文件，通过该文件即可完成模型的领域自适应任务。（Example：
+python train_UDA.py --source_dataset "gta5" --num_classes 19 --backbone "resnet101" --checkpoint_dir "./log/gta2city-res/" --pretrained_ckpt_file "../log/pretrainedmodles/gta5-res.pth"）</p>
+
+<p><b>4.模型测试</b>: 我们的工作采用ResNet101和VGG16作为backbone，将训练好的模型作为权重加载即可完成测试，我们也进一步提供了测试代码。（Example： python evaluate.py --source_dataset "gta5" --num_classes 19 --backbone "resnet101" --split "test" --checkpoint_dir "./log/eval/gta2city-res-UDA/" --pretrained_ckpt_file "./log/gta2city-res/gta52cityscapesfinal.pth"）</p>
+<p><b>5.模型权重</b>: 我们公开了该项工作对应的所有训练好模型权重 [<a href="https://drive.google.com/drive/folders/1WGovcwmlunbL00RV-y5Aug_kWXZklQ4F?usp=sharing">Trained Models</a>]，可以直接使用该权重文件进行训练及评估。</p>
+
+
+
+
+<hr>
+<h2>研究方向</h2>
+<ul>
+<div style="display: flex;">
+
+  <div class="picItem">
+    <img src=./img/vod.png width="350px" height="180px">
+    <p >视觉目标检测</p>
+    <p >VOD</p>
+  </div>
+  <div class="picItem">
+    <img src=./img/pcss.png width="350px" height="180px">
+    <p >点云语义分割</p>
+    <p >PCSS</p>
+  </div>
+    <div style="display: flex;">
+    <div class="picItem">
+    <img src=./img/uda.png width="350px" height="180px">
+    <p >无监督领域自适应</p>
+    <p >UDA</p>
+  </div>
+  <div class="picItem">
+    <img src=./img/mmdp.png width="350px" height="180px">
+    <p >多模数据处理</p>
+    <p >MMDP</p>
+  </div>
+</div>
+</ul>
+<hr>
+<h2>依托项目</h2>
+<ul>
+<li><p>国网湖南省电力有限公司科技项目重大专项：无人机多模数据融合与缺陷智能识别技术研究</p>
+</li>
+<li><p>湖南电科院数字化项目：基于线路通道多光谱数据的高精度树木分类</p>
+</li>
+  <li><p>国网湖南电科院科技项目：基于自监督学习的电网大规模预训练视觉识别模型关键技术研究及应用</p>
+</li>
+  <li><p>湖南省重点研究项目：复杂公共环境下智能交管系统中的多目标检测和异常行为识别</p>
+</li>
+  <li><p>云南交投合作项目：桥隧表观图像智能检测关键技术</p>
+</li>
+</ul>
+<hr>
+<h2>学术成果</h2>
+<ol>
+<li><p>Y. Cao, H. Zhang*, X. Lu, Y. Chen, Z. Xiao and Y. Wang, "Adaptive Refining-Aggregation-Separation Framework for Unsupervised Domain Adaptation Semantic Segmentation," in IEEE Transactions on Circuits and Systems for Video Technology, doi: 10.1109/TCSVT.2023.3243402.</p>
+<li><p>H. Zhang*, J. Tang, Y. Cao, Y. Chen, Y. Wang and Q. M. J. Wu, "Cycle Consistency Based Pseudo Label and Fine Alignment for Unsupervised Domain Adaptation," in IEEE Transactions on Multimedia, doi: 10.1109/TMM.2022.3233306.</p>
+  <li><p>Yan Tao, and Hui Zhang*. "A LAB color space style transfer method base on luminance grouping for semantic segmentation." 2022 China Automation Congress (CAC). IEEE, 2022.</p>
+</ol>
+<!--<h3>Recent publications </h3>-->
+
+<p><b>Note</b>: * indicates the corresponding author.</p>
+<hr>
+  <h2>项目组成员</h2>
+  <div style="display: flex;">
+    <div class="picItem">
+      <img src=./img/caoyihong.jpeg width="120px" height="150px">
+      <p >曹意宏</p>
+      <p >2021级博士在读</p>
+      <p >多场景自适应</p>
+    </div>
+    <div class="picItem">
+      <img src=./img/durui.png width="120px" height="150px">
+      <p >杜瑞</p>
+      <p >2022级博士在读</p>
+      <p >点云识别与处理</p>
+    </div>
+    <div class="picItem">
+      <img src=./img/bieke.png width="120px" height="150px">
+      <p >别克扎提·巴合提</p>
+      <p >2023级博士在读</p>
+      <p >机器视觉与工程应用</p>
+    </div>
+    <div class="picItem">
+      <img src=./img/liuyouwu.png width="120px" height="150px">
+      <p >刘优武</p>
+      <p >2021级硕士在读</p>
+      <p >医药异物检测</p>
+    </div>
+    <div class="picItem">
+      <img src=./img/taoyan.png width="120px" height="150px">
+      <p >陶岩</p>
+      <p >2021级硕士在读</p>
+      <p >双光目标检测</p>
+    </div>
+    <div class="picItem">
+      <img src=./img/zhaowei.png width="120px" height="150px">
+      <p >赵伟</p>
+      <p >2022级硕士在读</p>
+      <p >高光谱图像分析</p>
+    </div>
+    <div class="picItem">
+      <img src=./img/liuyu.png width="120px" height="150px">
+      <p >刘宇</p>
+      <p >2022级硕士在读</p>
+      <p >点云语义分割</p>
+    </div>
+    <div class="picItem">
+      <img src=./img/liangzhijia.png width="120px" height="150px">
+      <p >梁志佳</p>
+      <p >2022级硕士在读</p>
+      <p >小样本目标检测</p>
+    </div>
+
+  </div>
+  <hr>
+  <h2>学术&活动</h2>
+    <div style="display: flex;">
+      <div class="picItem">
+        <img src=./img/competition.png width="300px" height="230px">
+        <p >学术竞赛</p>
+      </div>
+      <div class="picItem">
+        <img src=./img/civc.jpg width="300px" height="230px">
+        <p >学术会议</p>
+      </div>
+      <div class="picItem">
+        <img src=./img/cooperation.jpg width="300px" height="230px">
+        <p >校企合作</p>
+      </div>
+      <div class="picItem">
+        <img src=./img/meeting.png width="300px" height="230px">
+        <p >团建活动</p>
+      </div>
+    </div>
+  <hr>
+  <p><b>如果您对此领域感兴趣并想加入我们的研究, 请联系我们(caoyihong@hnu.edu.cn; durui@hnu.edu.cn)或者张辉老师(zhanghuihby@126.com).谢谢!<b></p>
+</td>
+</tr>
+</table>
+<footer class="footer">
+  <div>
+    <p>National Engineering Research Center of Robot Vision Perception and Control Technology (RVC)</p>
+    <p>Hunan University</p>
+    <p>Changsha, Hunan, P.R. China</p>
+  </div>
+  <div>
+    <p>Copyright  RVC 2023</p>
+    <p>Above Site All right reserved.</p>
+  </div>
+</footer>
+
+  <script>
+    var doc = document
+    function addScroll ()　{
+      var menu = doc.getElementsByClassName('menu-content')[0]
+      const top = doc.documentElement.scrollTop
+      menu.style= `margin-top: ${top}px` 
+    }
+
+    doc.addEventListener('scroll', addScroll.bind(this))
+  </script>
+</body>
+</html>
