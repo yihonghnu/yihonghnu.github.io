@@ -329,21 +329,162 @@ python train_UDA.py --source_dataset "gta5" --num_classes 19 --backbone "resnet1
 <hr>
 <h2>学术成果</h2>
 <ol>
-<li><p>Y. Cao [曹意宏博士], H. Zhang* [张辉], X. Lu, Y. Chen, Z. Xiao and Y. Wang, "Adaptive Refining-Aggregation-Separation Framework for Unsupervised Domain Adaptation Semantic Segmentation," in IEEE Transactions on Circuits and Systems for Video Technology, doi: 10.1109/TCSVT.2023.3243402. [<a href="https://ieeexplore.ieee.org/abstract/document/10040699">论文</a>] [<a href="https://github.com/yihong-97/ARAS">代码</a>] </p>
-  <li><p>Y. Cao [曹意宏博士], H. Zhang* [张辉], X. Lu, Z. Xiao, K. Yang and Y. Wang, "Towards Source-Free Domain Adaptive Semantic Segmentation Via Importance-Aware and Prototype-Contrast Learning," in IEEE Transactions on Intelligent Vehicles, doi: 10.1109/TIV.2024.3383157. [<a href="https://ieeexplore.ieee.org/abstract/document/10485494">论文</a>] [<a href="https://github.com/yihong-97/Source-free-IAPC">代码</a>] </p>
-<li><p>H. Zhang* [张辉], J. Tang [唐珺琨硕士], Y. Cao, Y. Chen, Y. Wang and Q. M. J. Wu, "Cycle Consistency Based Pseudo Label and Fine Alignment for Unsupervised Domain Adaptation," in IEEE Transactions on Multimedia, doi: 10.1109/TMM.2022.3233306.  [<a href="https://ieeexplore.ieee.org/abstract/document/10004010">论文</a>] </p>
-  <li><p>Yan Tao [陶岩硕士], and Hui Zhang* [张辉]. "A LAB color space style transfer method base on luminance grouping for semantic segmentation." 2022 China Automation Congress (CAC). IEEE, 2022.</p>
-  <li><p>Yu Liu [刘宇硕士], Hui Zhang* [张辉]. "Inclination Detection of Distribution GridTowers Based on Point Cloud Semantic Segmentation", China Conference on Intelligent Robots, 2023.</p>
-  <li><p>Zhao W[赵伟硕士], Zhang H[张辉], et al. "SCASAN: Spatial Central Attention-Spectral Attention Network Based Feature Extractor for Hyperspectral Image Classification"2023 China Automation Congress (CAC). IEEE, 2023.  [<a href="https://ieeexplore.ieee.org/document/10451365">论文</a>] </p>
+<li><p><strong>Y. Cao [曹意宏], H. Zhang* [张辉], X. Lu, Y. Chen, Z. Xiao and Y. Wang, "Adaptive Refining-Aggregation-Separation Framework for Unsupervised Domain Adaptation Semantic Segmentation," in IEEE Transactions on Circuits and Systems for Video Technology, doi: 10.1109/TCSVT.2023.3243402. （格式参考，组内学生需加上中文，并标注通讯作者）
+</strong></p>
+        <p><strong>论文链接:</strong> <a href="https://ieeexplore.ieee.org/abstract/document/10040699">https://ieeexplore.ieee.org/abstract/document/10040699</a></p>
+        <p><strong>代码链接:</strong> <a href="https://github.com/yihong-97/ARAS">https://github.com/yihong-97/ARAS</a></p>
+        <p><strong>摘要:</strong> 无监督领域自适应作为一种解决语义分割任务标记困难的有前景的方法引起了广泛关注。它使用易于获得的标记虚拟源图像为未标记的真实目标图像训练分割网络。为了提高性能，使用聚类来获得域不变特征表示。然而，大多数基于聚类的方法不加选择地对两个域中按类别映射的所有特征进行聚类，导致质心偏移并影响鉴别特征的生成。我们提出了一种新的基于聚类的方法，该方法使用自适应细化聚合分离框架，通过为不同的域和特征设计不同的自适应方案来学习判别特征。聚类不需要任何可调阈值。为了更准确地估计域不变质心，我们设计了不同的方法来指导不同域特征的自适应细化。提出了一种直接评估目标特征置信度的方法，以解决目标标签缺失的问题。我们引入了一种域平衡聚合损失和两种分别用于距离和相似性的自适应分离损失，它们可以通过结合细化策略来区分聚类特征，从而提高分割性能。在GTA 5→Cityscapes和SYNTHIA→Cityscape基准上的实验结果表明，我们的方法优于现有的最先进的方法。</p>
+        <p><strong>Abstract:</strong> Unsupervised domain adaptation has attracted widespread attention as a promising method to solve the labeling difficulties of semantic segmentation tasks. It trains a segmentation network for unlabeled real target images using easily available labeled virtual source images. To improve performance, clustering is used to obtain domain-invariant feature representations. However, most clustering-based methods indiscriminately cluster all features mapped by category from both domains, causing the centroid shift and affecting the generation of discriminative features. We propose a novel clustering-based method that uses an adaptive refining-aggregation-separation framework, which learns the discriminative features by designing different adaptive schemes for different domains and features. The clustering does not require any tunable thresholds. To estimate more accurate domain-invariant centroids, we design different ways to guide the adaptive refinement of different domain features. A critic is proposed to directly evaluate the confidence of target features to solve the absence of target labels. We introduce a domain-balanced aggregation loss and two adaptive separation losses for distance and similarity respectively, which can discriminate clustering features by combining the refinement strategy to improve segmentation performance. Experimental results on GTA5→Cityscapes and SYNTHIA→Cityscapes benchmarks show that our method outperforms existing state-of-the-art methods.</p>
 
-<li><p>张辉,张邹铨等.工业铸件缺陷无损检测技术的应用进展与展望[J].自动化学报,2022,48(04):935-956.</p>
-<li><p>周应新,张辉,梁志佳等. 一种基于特征解缠表示的目标重识别方法及系统[P]. 云南省：CN116229146A,2023-06-06.（实审）</p>
-<li><p>张辉,刘优武等. 一种基于边界分布注意力的医药质量检测方法及系统[P]. 湖南省：CN115841481A,2023-03-24.（实审）</p>
-<li><p>黄志鸿,张辉,左沅君,刘宇等.一种基于分层神经网络的电力杆塔点云分割方法及系统[P]. 湖南省：202310769571.0, 2023-10-20.（实审）</p>
-  <li><p>2021年A类大赛第七届中国国际“互联网+”大学生创新创业大赛 银奖</p>
-  <li><p>2022年第八届湖南省“互联网+”大学生创新创业大赛 二等奖</p>
+  <li><p><strong>Y. Cao [曹意宏], H. Zhang* [张辉], X. Lu, Z. Xiao, K. Yang and Y. Wang, "Towards Source-Free Domain Adaptive Semantic Segmentation Via Importance-Aware and Prototype-Contrast Learning," in IEEE Transactions on Intelligent Vehicles, doi: 10.1109/TIV.2024.3383157.</strong></p>
+        <p><strong>论文链接:</strong> <a href="https://ieeexplore.ieee.org/abstract/document/10485494
+"></a>https://ieeexplore.ieee.org/abstract/document/10485494
+</p>
+        <p><strong>代码链接:</strong> <a href="https://github.com/yihong-97/Source-free-IAPC
+"></a>https://github.com/yihong-97/Source-free-IAPC
+</p>
+        <p><strong>摘要:</strong>域自适应语义分割可以在现实世界驾驶场景中实现强大的像素级理解。作为一种更实用的技术，无源域域适应解决了传统无监督域适应方法中数据隐私和存储限制的关注，这使其在智能车辆的背景下尤为重要。它利用训练有素的源模型和未标记的目标数据来实现目标域中的适应性。但是，在没有源数据和目标标签的情况下，当前解决方案无法充分降低域移动的影响并从目标数据中充分利用信息。在本文中，我们提出了一种通过重要性感知和原型对比度（IAPC）学习，提出了一种无端到端的无源域适应语义分割方法。提出的IAPC框架有效地从训练有素的源模型中提取了域不变知识，并从未标记的目标域中学习了特定于域的知识。具体而言，考虑到源模型对目标域预测的域移位问题，我们提出了一种重要的意识性机制，用于从源模型中提取域不变知识的有偏目标预测概率分布。我们进一步引入了一种原型对比策略，其中包括原型对称交叉熵损失和原型增强交叉熵损失，以学习目标内域知识而不依赖标签。在两个域自适应语义分割基准上进行的各种实验表明，所提出的端到端IAPC解决方案的表现优于现有的最新方法。源代码可在https://github.com/yihong-97/source-free-iapc上公开获得
+</p>
+        <p><strong>Abstract:</strong>Domain adaptive semantic segmentation enables robust pixel- wise understanding in real-world driving scenes. Source-free domain adaptation, as a more practical technique, addresses the concerns of data privacy and storage limitations in typical unsupervised domain adaptation methods, making it especially relevant in the context of intelligent vehicles. It utilizes a well-trained source model and unlabeled target data to achieve adaptation in the target domain. However, in the absence of source data and target labels, current solutions cannot sufficiently reduce the impact of domain shift and fully leverage the information from the target data. In this paper, we propose an end-to-end source-free domain adaptation semantic segmentation method via Importance-Aware and Prototype-Contrast (IAPC) learning. The proposed IAPC framework effectively extracts domain-invariant knowledge from the well-trained source model and learns domain-specific knowledge from the unlabeled target domain. Specifically, considering the problem of domain shift in the prediction of the target domain by the source model, we put forward an importance-aware mechanism for the biased target prediction probability distribution to extract domain-invariant knowledge from the source model. We further introduce a prototype-contrast strategy, which includes a prototype-symmetric cross-entropy loss and a prototype-enhanced cross-entropy loss, to learn target intra-domain knowledge without relying on labels. A comprehensive variety of experiments on two domain adaptive semantic segmentation benchmarks demonstrates that the proposed end-to-end IAPC solution outperforms existing state-of-the-art methods. The source code is publicly available at  https://github.com/yihong-97/Source-free-IAPC .
+</p>
+    <li><p><strong>H. Zhang* [张辉], J. Tang [唐珺琨], Y. Cao, Y. Chen, Y. Wang and Q. M. J. Wu, "Cycle Consistency Based Pseudo Label and Fine Alignment for Unsupervised Domain Adaptation," in IEEE Transactions on Multimedia, doi: 10.1109/TMM.2022.3233306.
+</strong></p>
+        <p><strong>论文链接:</strong> <a href="https://ieeexplore.ieee.org/abstract/document/10004010
+"></a>https://ieeexplore.ieee.org/abstract/document/10004010
+</p>
+        <p><strong>摘要:</strong>无监督域自适应（UDA）旨在将知识从标记良好的源域转移到具有相关分布的未标记目标域。许多现有的方法通过直接匹配两个域之间的边际分布来处理这个难题，这面临着粗略对齐和模糊决策边界的障碍。UDA的最新进展引入了目标伪标签和子域自适应，以减少未对准和分布差异。然而，他们经常忽视目标伪标签的产生是如此依赖于源训练的分类器，在没有合理限制的情况下，区分生成的伪标签是否自信。同时，子域对齐度量中的许多方法忽略了探索域内同类样本之间的潜在分布差异。为了同时解决这两个问题，本文提出了一种基于循环一致性的伪标签和精细对齐（CCPLFA）方法用于UDA。特别是，首先，设计了一种基于循环一致性的伪标签模块，这是一种简单而有效的方法来减轻伪标签的噪声并提高其语义正确性。其次，我们开发了一个精细对齐分布匹配度量。这可以最大限度地提高类内跨域的特征分布密度，而不会忽视全局方面的分布结构。在四个基准上的综合实验结果证明了我们提出的方法的即插即用能力和良好的泛化性能。
+</p>
+        <p><strong>Abstract:</strong>Unsupervised Domain Adaptation (UDA) aims to transfer knowledge from a well-labeled source domain to an unlabeled target domain with a correlative distribution. Numerous existing approaches process this hard nut by directly matching the marginal distribution between two domains, which confront the obstacle of rough alignment and blurred decision boundary. Recent advances in UDA introduce target pseudo-label and subdomain adaptation to reduce misalignment and distribution discrepancy. Whereas, they frequently ignore that the production of target pseudo-label is so dependent on the source-trained classifier, which without reasonable restriction to discriminate generated pseudo-label is whether confident. Meanwhile, many methods in the subdomain alignment metric ignore exploring the potential distribution discrepancy between same-class samples of the intra-domain. To address these two issues simultaneously, this paper proposes a Cycle Consistency based Pseudo Label and Fine Alignment (CCPLFA) approach for UDA. In particular, firstly, a novel cycle-consistency based pseudo label module is designed, which is a simple yet effective way to alleviate the noise of pseudo labels and improve their semantic correctness. Secondly, we develop a Fine-Alignment distribution matching metric. Which can maximize the feature distribution density of intra-class cross-domains and not overlook the distribution structure of the global aspect. Comprehensive experiment results on four benchmarks demonstrate the capability of plug and play and the well generalization performance of our proposed method.
+</p>
+    <li><p><strong>Yan Tao [陶岩], and Hui Zhang* [张辉]. "A LAB color space style transfer method base on luminance grouping for semantic segmentation." 2022 China Automation Congress (CAC). IEEE, 2022.
+</strong></p>
+        <p><strong>论文链接:</strong> <a href="https://ieeexplore.ieee.org/abstract/document/10056064
+"></a>https://ieeexplore.ieee.org/abstract/document/10056064
+</p>
+        <p><strong>摘要:</strong>近年来，语义分割取得了很大进展，它是计算机视觉中的一项基本任务，为图像中的每个像素分配类标签。由于用于语义分割的数据集的像素级注释总是一项代价高昂的任务，因此使用处理器生成的虚拟图像数据是解决这一问题的重要方法。但是，合成数据域和现实域之间不可避免地存在差异。我们提出以下解决上诉问题的方法。首先，提出了一种基于亮度分组的LAB颜色空间风格转换方法，以减少两个域之间的差异。其次，我们发现傅里叶变换谱传递方法通过切换源和目标域的低频分布来减小源和目标分布之间的差异
+</p>
+        <p><strong>Abstract:</strong>Recently, semantic segmentation has made great progress, which is a basic task in computer vision and assigns the class label for each pixel in a image. Since pixel-level annotation of datasets for semantic segmentation is always a costly task, using the processor-generated virtual image data is an important method to solve this problem. But there are inevitable differences between the synthetic data domain and the reality domain. We propose the following ways to solve the appeal problem. Firstly, a LAB color space style transfer method based on luminance grouping is proposed to reduce the differences between the two domains. Secondly, we found that the Fourier transform spectrum transfer method reduces the difference between the source and target distributions by switching the low-frequency distributions of the source and target domains.
+</p>
+    <li><p><strong>Yu Liu [刘宇], Hui Zhang* [张辉]. "Inclination Detection of Distribution GridTowers Based on Point Cloud Semantic Segmentation", China Conference on Intelligent Robots, 2023.
+</strong></p>
+        <p><strong>摘要:</strong>作为整个电力系统最基础的设施，电力杆塔的稳定性直接关系到电力系统的供电安全。极端天气或地形变化容易导致杆塔倾斜，带来严重的安全隐患。因此，定期检测杆塔倾斜度至关重要。我们提出了一种基于点云语义分割的杆塔倾斜检测算法。首先，构建了电力杆塔点云数据集。其次，为解决点云分割训练数据不足的问题，我们提出了固定区域切片（FAS）和多稀疏切片（MSS）数据增强方法，使杆塔点云分割的mIOU和mAcc分别提升至89.4%和96.4%。最后，基于点云语义分割的杆塔倾斜检测算法被进一步提出。结果表明，该算法预测的倾斜角与真实值的平均偏差约为0.1°。实验验证了该算法在配电杆塔场景中的有效性和正确性。
+</p>
+        <p><strong>Abstract:</strong>As the most basic facility of the entire electric power grid, the stability of power towers is directly related to the power supply security of the electric power system. Extreme weather or terrain changes can easily lead to tower tilting, which poses significant safety hazards. Therefore, it is necessary to regularly inspect the inclination of the tower. We propose a tower inclination detection algorithm based on point cloud semantic segmentation. First, the power tower point cloud dataset is constructed. Second, to overcome the problem of insufficient training data for point cloud segmentation, we propose the fixed-area slicing(FAS) and multi-sparse slicing(MSS) for data augmentation, which improves the accuracy of tower point cloud segmentation mIOU and mAcc to 89.4% and 96.4% respectively. Finally, the tower inclination detection algorithm based on point cloud semantic segmentation is proposed. The results show that the average deviation between the predicted tilt angle of the algorithm and the factual value is about 0.1◦. This algorithm is proved to be effective and correct in the distribution grid towers.
+</p>
+      <li><p><strong>Zhao W[赵伟], Zhang H[张辉], et al. "SCASAN: Spatial Central Attention-Spectral Attention Network Based Feature Extractor for Hyperspectral Image Classification"2023 China Automation Congress (CAC). IEEE, 2023.
+</strong></p>
+        <p><strong>论文链接:</strong> <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10451365
+"></a>https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10451365
+</p>
+        <p><strong>摘要:</strong>由于空间、时间、环境变化和地面物体类型对高光谱图像光照条件的影响，高光谱图像（HSl）分类具有挑战性。最近，基于注意力的HSI分类受到了越来越多的关注。它使用空间注意力和光谱注意力来捕捉所需的空间光谱特征，从而实现更好的分类精度。然而，在不损害空间光谱特征的情况下，将这两种注意力机制联系起来是具有挑战性的。此外，如何获得决定每个通道或空间位置重要性的注意力权重矩阵也是注意力机制使用中的一个重要问题。针对上述问题，空间中心关注。光谱注意力网络（SCASAN）旨在有效地对空间光谱信息进行建模，以进行HSI分类。在这个网络中，我们提出了新的光谱权重空间注意力（SWSA）模块来解决空间注意力和光谱注意力之间的联系问题。此外，我们利用空间中心注意力网络（空间CAN）来获得空间注意力权重矩阵，以避免非均匀相邻像素对分类像素的影响。通过在三个公开数据集上进行的综合实验证明，与最先进的方法相比，我们提出的方法在高光谱图像分类方面表现出了更优的性能。
+</p>
+        <p><strong>Abstract:</strong>Due to the infuence of space, time, environmentalchanges, and types of ground objects on the lighting conditions ofhigh-light falling images, Hyperspectral image (HSl) classificationis challenging. Recently, attention-based HSI classifcation hasreceived increasing attention. It uses both spatial attentionand spectral attention to capture the required spatial-spectralfeatures, thereby achieving better classifcation accuracy. How.ever, it is challenging to connect the two attention mechanismswithout compromising the spatial-spectral features. In addition.how to obtain the attention weight matrix which determinesthe importance of each channel or spatial location is also animportant problem in the use of attention mechanisms. Inresponse to the above issues, the Spatial Central Attention.Spectral Attention network (SCASAN) is designed to efficientlymodel the spatial-spectral information for HSI classifcation. Inthis network, we propose the novel spectral weight spatial attention (SWSA)module to solve the connection problem betweenspatial attention and spectral attention. Furthermore, we utilizea spatial central attention network(spatial CAN)to obtain aspatial attention weight matrix to avoid the impact of non.homogeneous adjacent pixels on the classified pixel. Our proposedapproach demonstrates superior performance in hyperspectralimage classification compared to state-of-the-art methods, asevidenced by comprehensive experiments conducted on threepublicly available datasets.
+</p>
+        <li><p><strong>张辉,张邹铨等.工业铸件缺陷无损检测技术的应用进展与展望[J].自动化学报,2022,48(04):935-956.
+</strong></p>
+        <p><strong>摘要:</strong>高端装备制造业是国民经济的支柱产业, 是推动工业转型升级的引擎, 发挥着举足轻重的作用. 而铸造产业一直是人类现代生产生活中重要的、不可替代的产业, 铸件产品既是工业制造产品, 也是大型机械的组成部分. 随着经济水平和工业自动化程度的不断提升, 人们对于铸件的需求量呈指数爆炸式增长, 铸件价值辐射到各行各业. 与此同时, 铸件在铸造、服役过程中经常会出现各种缺陷, 而传统低效的人工检测方法难以保障工业界对中高端铸件的性能需求. 因此亟需对铸件检测技术进行革新. 本文首先对铸件铸造过程以及服役过程中各类缺陷的形成机理进行分析. 然后阐述了基于声学、光学、电磁学等主流检测技术及其常规信号处理方法、磁粉检测技术与渗透检测技术等其他检测技术, 并对近年来新兴的基于神经网络的信号处理方法进行了说明. 在此基础上, 分析了近年来铸件缺陷无损检测技术以及基于神经网络的信号处理方法的研究现状. 最后, 对铸件缺陷无损检测技术及应用的发展趋势进行了展望.
+</p>
+        <p><strong>Abstract:</strong>High-end equipment manufacturing industry is the pillar industry of the national economy and the engine to promote industrial transformation and upgrading. It plays a pivotal role. Foundry industry has been an important and irreplaceable industry in modern production and life of human beings, and casting products are both industrial manufacturing products and components of large machinery. With the continuous improvement of economic level and industrial automation, the demand for castings is growing exponentially and explosively, and the value of castings radiates to all walks of life. At the same time, casting products often show various defects in the process of casting and service, and the traditional inefficient manual detection method is difficult to guarantee the performance requirements of the industry for middle and high-end castings. Therefore, it is urgent to improve the casting testing technology. Firstly, we analyze the formation mechanism of various defects in casting process and service process in this paper. Then we describe the main detection techniques based on acoustics, optics and electromagnetism and conventional signal processing methods, magnetic particle detection technology and penetration detection technology. We also describe the emerging signal proceesing methods based on neural network in recent years. On this basis, we analyze the research status of casting defect nondestructive testing technology and neural network-based signal processing method in recent years. At last, the development trend of casting defect nondestructive testing technology and its application are prospected.
+</p>
+
+              <li><p><strong>Dousang Wu, Hui Zhang, Yihong Cao, Rui Du, Baheti Biekezat, "MDAF: Enhancing Temporal Dynamics in CNNs for Action Recognition," in 2024 China Automation Congress (CAC)
+</strong></p>
+        <p><strong>摘要:</strong>理解视频序列中的时间信息对于各种计算机视觉任务（如动作识别）至关重要。基于变压器的方法和GCNs可以有效地处理时间信息，但它们的计算成本高，泛化能力差。一些研究表明，使用3D cnn来处理骨骼数据而不是RGB数据有很好的结果，但3D cnn可能将时间维度视为空间维度，限制了它们捕捉复杂时间动态的能力。为了解决这些问题，我们提出了多维注意力融合模块（MDAF），该模块包括单独的通道、空间和时间注意力计算模块，通过一个注意力融合模块集成。这种设计确保了注意力信息在各个维度上的有效利用。该方法增强了时间动态，提高了对复杂动作的识别能力。在四个基准数据集上进行的实验表明，我们的方法优于最先进的方法，实现了显着的性能改进。</p>
+        <p><strong>Abstract:</strong>Understanding temporal information in video sequences is crucial for various computer vision tasks, such as action recognition. Transformer-based methods and GCNs can effectively handle temporal information, but they suffer from high computational costs or poor generalization capabilities. Some research has shown promising results using 3D CNNs to process skeleton data instead of RGB data, but 3D CNNs may treat temporal dimension as a spatial one, limiting their ability to capture complex temporal dynamics. To address these issues, we propose the Multi-Dimensional Attention Fusion module (MDAF), which includes separate channel, spatial, and temporal attention computation modules, integrated through an attention fusion module. This design ensures the effective utilization of attention information across all dimensions. Our method enhances temporal dynamics, improving the recognition of complex actions. Experiments conducted on four benchmark datasets demonstrate that our approach outperforms state-of-the-art methods, achieving significant performance improvements.
+</p>
+
+                <li><p><strong>Liang Zhijia[梁志佳], Hui Zhang[张辉] et al. “Few-Shot Transmission Line Foreign Object Detection Based on Transfer Learning.” Proceedings of the 7th International Conference on Computer Science and Application Engineering (2023): n. pag.
+</strong></p>
+        <p><strong>论文链接:</strong> <a href="https://dl.acm.org/doi/abs/10.1145/3627915.3628023
+"></a>https://dl.acm.org/doi/abs/10.1145/3627915.3628023
+</p>
+        <p><strong>摘要:</strong>输电线路上存在异物会危及输电线路的安全运行。然而，传输线上的异物体积很小，可供收集的数据有限。在使用少量目标检测算法进行检测时，存在少量数据误分类和网络偏差的高风险，使得传输线上的异物检测任务具有挑战性。为了解决这个问题，我们提出了一种基于少射目标检测的传输线上异物检测方法。首先，我们在迁移学习中引入了注意机制，增强了网络对少量数据的关注，减轻了网络偏差。其次，我们提出了一种在线困难样本选择方法，以解决由于对象尺寸小而导致的少量数据分类和假阳性和假阴性的问题。此外，我们使用对合来提高异物检测的准确性。此外，我们构建了精细标记的传输线异物数据集（TLFOD）。在具有挑战性的TLFOD数据集上，我们的方法在异物检测方面达到了98.4%的平均精度，超过了现有的最先进的方法，并且在分类回归和位置回归方面表现出色。</p>
+        <p><strong>Abstract:</strong>Presence of foreign objects on power transmission lines can jeopardize the safe operation of the transmission lines. However, foreign objects on transmission lines are small in size and the available data for collection is limited. When using few-shot object detection algorithms for detection, there is a high risk of misclassifying of few-shot data and network bias, making the task of foreign object detection on transmission lines challenging. To address this, we propose a method for detecting foreign objects on transmission lines based on few-shot object detection. Firstly, we introduce an attention mechanism in transfer learning to enhance the network's focus on few-shot data and mitigate network bias. Secondly, we propose a method for online difficult sample selection to address the issues of few-shot data classification and the occurrence of false positives and false negatives due to small object sizes. Additionally, we used involution to improve the accuracy of foreign object detection. Furthermore, we construct the finely labeled Transmission Line Foreign Object Dataset (TLFOD). Our method achieves an average precision of 98.4% in foreign object detection on the challenging TLFOD dataset, surpassing existing state-of-the-art methods and demonstrating outstanding performance in classification regression and position regression.
+</p>
+                <li><p><strong>黄志鸿,刘帅,张辉,梁志佳等.基于小样本目标检测的配电线路异物识别[J].科学技术与工程,2024, 24(32):13935-13943.
+</strong></p>
+        <p><strong>论文链接:</strong> <a href="http://stae.com.cn/jsygc/article/pdf/2307412
+"></a>http://stae.com.cn/jsygc/article/pdf/2307412
+</p>
+        <p><strong>摘要:</strong>为了解决小样本目标检测算法中网络倾斜现象,小样本数据误检、漏检等问题,提出一种基于小样本目标检测的配电线路异物识别方法。首先,通过在迁移训练中引入注意力机制,解决网络倾斜现象。其次,提出在线难度样本选择的方法。解决小样本分类以及小尺寸异物误检和漏检问题。再次,采用内卷积解决传统卷积问题,提高异物检测精度。再次,提出新的锚框方案,解决小尺寸异物目标定位不准问题。最后,构建一个配电线路异物数据集。该方法相较于之前先进算法在配电线路异物检测数据集上检测精度提高了4.4%,达到98.6%,具有优异性能。
+</p>
+        <p><strong>Abstract:</strong>In order to solve the problems of network skew, small sample data misdetection and missing detection in small sample target detection algorithm, a foreign body identification method of distribution line based on small sample target detection is proposed. Firstly, the network skew phenomenon is solved by introducing attention mechanism in transfer training. Secondly, the method of online difficulty sample selection is proposed. Solve the problem of small sample classification and small size foreign body misdetection and missing detection. Thirdly, internal convolution is used to solve the traditional convolution problem and improve the accuracy of foreign body detection. Thirdly, a new anchor frame scheme is proposed to solve the problem of inaccurate positioning of small size foreign objects. Finally, a distribution line foreign body data set is constructed. Compared with the previous advanced algorithms, the detection accuracy of the proposed method on the distribution line foreign body detection data set is increased by 4.4%, reaching 98.6%, and has excellent performance.</p>
+
+  <li><p><strong></strong>张辉,刘优武等. 一种基于边界分布注意力的医药质量检测方法及系统[P]. 湖南省：CN115841481A,2023-03-24.（实审）
+</p>
+        <p><strong>摘要:</strong>本发明公开了一种基于边界分布注意力的医药质量检测方法及系统,其包括：构造数据集,即对目标液体图像上可见异物的位置以及类别进行标定；构建包含特征提取网络、特征融合网络以及边界分布注意力检测头网络的神经网络模型；其中,边界分布注意力检测头网络的输出为每个像素点所属的类别以及以每个像素点为中心点的回归框的四条边界到中心点的距离,所述类别为可见异物类别或背景；利用数据集训练神经网络模型；将待检测的目标液体图像输入训练后的所述神经网络模型得到可见异物的检测结果。本发明技术方案创造性地设计出包含边界分布注意力检测头网络的神经网络,能够分析回归框的每条边界分布的重要程度,进而指导像素点分类,降低误检率。
+</p>
+        <li><p><strong>黄志鸿,张辉,左沅君,刘宇等.一种基于分层神经网络的电力杆塔点云分割方法及系统[P]. 湖南省：202310769571.0, 2023-10-20.（实审）
+</strong></p>
+        <p><strong>摘要:</strong>本发明公开了一种基于分层神经网络的电力杆塔点云分割方法及系统，本发明方法包括获取待处理的电力杆塔及周围环境的点云数据；将点云数据输入分层神经网络：利用多级集合抽样层对点云数据进行抽样；利用多级特征传播层对抽样得到的每个质心的局部特征向量进行上采样从而完成对点云数据的特征学习获得整个点云的全局特征向量，利用全连接层将整个点云的全局特征向量映射为类别分数向量，再利用Softmax激活层将类别分数向量转换为概率分布，得到点云数据中每个点属于不同类别的概率。本发明旨在更好地适应电力杆塔的点云数据特征，利用分层神经网络对电力杆塔点云数据实现快速、准确的自动化分割。
+</p>
+          <li><p><strong>张辉;赵伟;曹意宏等. 一种基于自注意力网络的高光谱图像分类特征提取方法[P]. 湖南省：CN202411088848.4, 2024-08-09.（实审）
+</strong></p>
+        <p><strong>摘要:</strong>本发明公开了一种基于自注意力网络的高光谱图像分类特征提取方法，提出了基于空谱自注意力机制的特征提取网络，直接利用初始输入进行光谱注意操作和空间注意操作，将其结果进行联系，将光谱注意力机制和空间注意力机制引入特征提取网络中，使得网络更加关注检测任务感兴趣的区域，避免光谱数据被破坏和光谱重要性无法正确提取的问题；并且提出了基于光谱中心自注意力网络的特征提取网络，计算贡献率最大的光谱与其他光谱之间的相似度，避免不同光谱之间不相关的影响，使得神经网络更多地关注贡献大的光谱波段，提取图像光谱局部差异特征，提升高光谱图像分类精度。
+</p>
+          <li><p><strong>张辉;赵伟;刘立柱等. 基于跨尺度空谱特征融合网络的病理高光谱图像检测方法[P]. 湖南省：CN202411244312.7, 2024-09-06.（预审通过）
+</strong></p>
+        <p><strong>摘要:</strong>本发明公开了一种基于跨尺度空谱特征融合网络的病理高光谱图像检测方法，该方法提出了基于跨尺度空谱特征融合的特征提取网络，首先，在编码器阶段利用膨胀卷积提取多尺度信息，从而使得网络更好的得到多个感受野的特征信息；然后，在编码器和解码器的跳跃连接阶段，利用 transformer的变形进行跨尺度间特征提取，可以更好的保留输入图像样本的全局上下文信息和布局信息；最后，为了缓解空谱特征提取困难，在解码器部分提出特征注意力机制，对解码器不同层的输出进行处理，获取更丰富的跨层特征，提取不同层之间更重要的特征信息，从而提高网络的分割性能，使得的神经网络更好的提取光谱特征融合信息，提升病理高光谱的检测精度。
+</p>
+          <li><p><strong>吴晟;赵伟;孙云龙等. 电力设备缺陷图像扩散生成方法及系统[P]. 湖南省：CN202411618092.X, 2024-11-13.（已申请）
+</strong></p>
+        <p><strong>摘要:</strong>本发明公开了一种电力设备缺陷图像扩散生成方法及系统，涉及电力视觉技术领域，包括步骤：将正常原始图像划分为多个子区域图像并进行位置编码；进行降维和映射得到低维空间的原始特征图和文本特征嵌入：添加高斯噪声得到噪声特征图；进行特征提取得到第一特征图和第二特征图；得到融合特征图；去除缺陷噪声得到映射特征图；若满足预设终止条件，则采用解码器将映射特征图还原到三维空间，得到与拟定缺陷文本提示对应的电力设备缺陷扩散图像，若不满足预设终止条件，则将映射特征图更新为噪声特征图并重复上述步骤。本发明的方法，兼顾了生成质量和结果的多样性与真实性，能够为下游视觉任务提供全新的训练样本，同时所需算力资源较少、易于实施。
+</p>
+          <li><p><strong>"黄志鸿，张辉，孙云龙等. 一种电力导线点云分割方法、系统及介质[P].湖南省:CN202410590292.2，2024-5-13.（实审）
+"
+</strong></p>
+        <p><strong>摘要:</strong>本发明公开了一种电力导线点云分割方法、系统及介质，本发明包括利用分组特征提取与多级注意力融合网络进行电力导线点云提取，包括将点云数据升维后通过多层集合抽象层SA进行分层特征抽象，再将输出的特征经过特征上采样层FUS得到分组局部特征；同时将升维后的点云数据通过多级自注意力层TR后再通过多级残差连接、融合提取点云逐点特征；将分组局部特征、点云逐点特征经特征融合层FF融合得到点云全局特征向量，并通过线性层映射为类别分数向量，经过Softmax层激活得到每个点的预测标签。本发明旨在高效地提取电力导线点云数据特征，有效提高复杂场景下电力导线点云的准确率和效率。
+</p>
+            <li><p><strong>黄志鸿，张辉，梁志佳等. 一种基于小样本目标检测的配网线路异物检测方法及系统[P]. 湖南省：CN202310737973.2, 2023-6-20.（实审）
+</strong></p>
+        <p><strong>摘要:</strong>本发明公开了一种基于小样本目标检测的配网线路异物检测方法及系统，本发明包括针对异物类别图像异物图像，将异物类别图像异物图像训练异物类别图像异物图像生成网络模型并增加异物类别图像异物图像的样本数量；将所有类别图像统一格式并进行标注处理并形成异物数据集；统计异物数据集中所有类别图像的锚点框的长宽比，生成锚点框模板；采用锚点框模板、基于基类训练集训练特征提取网络；构建改进小样本目标检测网络模型，利用等量训练实例完成对改进小样本目标检测网络模型的训练，并保存改进小样本目标检测网络模型中最优的权重参数和超参数。本发明旨在减少了人工参与且确保检测实时性，在极少量异物样本中实现高检测精度、能取得好的检测效果。
+</p>
+            <li><p><strong>张辉，梁志佳，陈波等. 一种自主学习训练可视化系统及其方法[P]. 湖南省：CN202310669792.0, 2023-6-7. （实审）
+</strong></p>
+
+        <p><strong>摘要:</strong>本发明公开了一种自主学习训练可视化系统及其方法，系统包括可视化模块和封装库，可视化模块包括若干个具有不同功能的可视化子模块，封装库包括网络结构封装库，通过程序调用网络结构封装库，从网络结构封装库中预设的若干个深度神经网络中选取目标网络，从若干个具有不同功能的可视化子模块中选取目标可视化子模块，通过选取的目标可视化子模块对选取的目标网络进行可视化，得到目标网络的可视化结果。该方法可以方便快捷得到各种可视化结果，增强深度学习算法的可解释性，实现神经网络的组态浏览与分析。
+</p>
+              <li><p><strong>张辉，梁志佳，胡非易等.  面向高端智能控制器的自主学习可视化软件
+</strong></p>
+
+        <p><strong>摘要:</strong>本软件公开了一种自主学习训练可视化系统及其方法，系统包括可视化模块和封装库，可视化模块包括若干个具有不同功能的可视化子模块，封装库包括网络结构封装库，通过程序调用网络结构封装库，从网络结构封装库中预设的若干个深度神经网络中选取目标网络，从若干个具有不同功能的可视化子模块中选取目标可视化子模块，通过选取的目标可视化子模块对选取的目标网络进行可视化，得到目标网络的可视化结果。该方法可以方便快捷得到各种可视化结果，增强深度学习算法的可解释性，实现神经网络的组态浏览与分析。
+</p>
+
+              <li><p><strong>2024年第五届湖南省人工智能大赛二等奖. 唐友源，蒋雄杰.  彭振宇. 指导老师：张辉
+</strong></p>
+
+        <p><strong>《基于双分支特征融合网络的电力导线覆冰检测系统》</strong>《基于双分支特征融合网络的电力导线覆冰检测系统》：覆冰可能导致电力导线过载、断线或融冰跳跃，严重威胁电网的稳定运行。为解决现有覆冰检测方法的不足，我们团队借助深度学习与传感器技术的发展，开发了一款基于双分支特征融合网络的电力导线覆冰检测系统。该系统包括数据采集、覆冰厚度计算方法及界面可视化展示三个部分。检测流程为通过搭载LiDAR等传感设备的无人机，在复杂山地和恶劣气候下，实时获取电力线路的三维点云和地理坐标数据。随后，通过双分支特征融合网络对点云进行语义分割，提取导线点云数据，最后通过设计多核自适应覆冰检测算法进行覆冰分析。并在设计的可视化界面上进行结果展示。
+</p>
+
+              <li><p><strong>2024年第三届湖南省计算机创新大赛二等奖. 蒋雄杰.  唐友源. 指导老师：张辉
+</strong></p>
+
+        <p><strong>《医药高光谱成像与检测系统》</strong>本项目“AI赋能-医药高光谱成像与检测系统”致力于开发一种高端的医药检测仪器，以响应国家对生物医药行业的重视和推动其发展。项目背景突出了医药安全的重要性，并指出了现有检测技术的不足。项目利用高光谱成像技术，能够对医药成分、品质、含量等进行快速、无损和精确的测量，解决传统检测方法的局限性。研究现状显示，尽管国外技术先进，国内尚处于起步阶段，本项目旨在缩小这一差距。项目目标是研制集高光谱成像、拉曼光谱检测、图谱大数据分析于一体的仪器，以自动分析药品的多种参数，促进医药科研和保障安全。技术创新包括高光谱硬件平台、成像系统和药物分析系统的设计，以及基于4bit量化的CNN部署方法，实现在资源受限设备上的深度学习模型部署。系统测试验证了所提方法的有效性，预示着项目对医药检测领域的重大贡献。
+</p>
+                <li><p><strong>2024年第十九届中国研究生电子设计竞赛华中赛区二等奖. 刘航，刘宇，唐友源 指导老师：张辉
+</strong></p>
+
+        <p><strong>《基于双分支特征融合网络的电力导线覆冰检测方法》</strong>覆冰引起的电力导线过载、断线和融冰跳跃，严重威胁着电网的稳定运行。因此，本文提出了一种基于双分支特征融合网络的电力导线覆冰检测方法，以精准识别电力导线覆冰状态。首先，通过数据滤波和数据增强方法，解决点云数据样本不足和类别不平衡的问题。随后，构建了基于双分支特征融合的点云语义分割框架，通过融合分层特征抽样和多级注意力，实现电力导线点云高精度提取。本文设计了三种基于点云数据的电力导线覆冰检测方法，并在实际采集的数据集上选取最优方案。实验表明，本文方法在电力导线点云分割方面表现优异，mIoU和mAcc分别为94.6%和97.3%；在覆冰厚度检测方面，平均厚度偏差为9mm，误判率为7.9%，显著提升了电力导线覆冰检测的精度与可靠性，具有广阔的应用前景。
+</p>
+                <li><p><strong>2023年第四届湖南省人工智能创新大赛一等奖. 陈为立，黄长庆，梁志佳. 指导老师：张辉
+</strong></p>
+
+        <p><strong>《智能双臂协同配药机器人及检测平台》</strong>本项目设计了一套双臂机器人配药制药系统与平台，用于在药物生产与研发环境中进行小批量、定制化的自动化药液配制与检测任务。在药物研制过程中使用双臂配药制药机器人辅助医药研究人员实现药物的自动化配置，能够有效地实现无菌化操作，大幅降低药物污染的风险，保障药物的质量和安全。同时，在药物生产过程中使用双臂配药制药机器人完成重复性的制药工作，能够极大的节约人力和开发成本，满足配药制药机器人低污染、高灵活性、高效率的作业需求。此外，在药业质检过程中，结合深度学习算法与高光谱的智能化异物检测模型，实现药液高精度异物检测，保证药液的生产质量与安全。故此双臂配药制药机器人在医药开发、疫苗研究、批量定制化生产等领域具有极大的经济和社会意义。
+</p>
+  <li><p><strong>2024年第六届“华为杯”中国研究生人工智能创新大赛二等奖. 黄长庆，陈为立，梁志佳. 指导老师：张辉
+</strong></p>
+
+        <p><strong>《智能双臂协同配药机器人及药液检测平台》</strong>本项目的整体目标是针对高端制药生产过程中的特殊工艺流程需求，拟利用多机器人协同控制、智能自主规划与人工智能等技术相结合，设计一个能够自主完成无菌配药、质量检测的智能双臂协同配药机器人及药液检测平台，实现药品配药的高速高精度全流程自动化，以提高配药效率。同时满足客户柔性化定制，小批量试制等需求;并配置层流系统，保证作业空间内为无尘高洁净度环境。
+</p>
+  <li><p><strong>2023年第二届湖南省计算机创新大赛一等奖. 陈为立，黄长庆，梁志佳. 指导老师：张辉
+</strong></p>
+
+        <p><strong>《智能双臂协同配药机器人及检测平台》</strong>本项目实现的功能是利用双臂协同机器人将液体试剂按照拟设定配方工艺进行配置，并将配置完成的试剂精确的注入器皿中，器皿通过输送带前往配药与检测交互区域进行药瓶封装，后在检测工位完成药液异物检测，实现全自动化的药液配置生产与检测。
+</p>
+
 </ol>
 <!--<h3>Recent publications </h3>-->
+
 
 <p><b>Note</b>: * indicates the corresponding author.</p>
 <hr>
