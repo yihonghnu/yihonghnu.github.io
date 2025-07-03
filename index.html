@@ -329,6 +329,53 @@ python train_UDA.py --source_dataset "gta5" --num_classes 19 --backbone "resnet1
 <hr>
 <h2>学术成果</h2>
 <ol>
+
+<li><p><strong>H.Zhang* [张辉], Y. Liu [刘宇], H. Zhong et al. Multimodal Fusion Network for Power Tower Semantic Segmentation and Inclination Detection. IEEE Transactions on Industrial Informatics, 2025. 10.1109/TII.2025.3578133.. </strong></p>
+        <p><strong>论文链接:</strong> <a href="https://ieeexplore.ieee.org/document/11049808
+"></a>https://ieeexplore.ieee.org/document/11049808
+</p>
+    <p><strong>摘要: </strong>作为配电网最基本的支撑基础设施，电力塔需要定期检查其倾斜状态以确保系统的平稳运行。为克服仅使用图像或点云在大规模场景中区分目标所面临的显著困难，我们提出了一种用于电力塔语义分割与倾斜检测的多模态融合语义分割网络（MFSS）。首先，提出了有效的近地面滤波和固定区域切片算法，以解决样本不平衡和数据不足的问题。其次，MFSS融合了RGB信息和点云特征，以增强对电力塔的描述能力。最后，提出了一种新颖的配电塔倾斜检测方法，通过估计顶部与底部重心轴线来计算塔体倾角，从而提高检测的准确性和稳定性。在我们构建的数据集上的实验结果表明，所提出的方法优于现有算法，在电力塔分割中实现了77.3%的IoU和96.69%的类别准确率，倾斜检测的平均角度偏差为0.78°，状态判定误检率仅为2.4%
+ </p>
+    <p><strong>Abstract: </strong> As the most fundamental supporting infrastructure of the distribution network, power towers require regular checks of their tilting status to ensure the system’s smooth operation. To overcome distinguishing objects in large-scale scenes using solely images or point clouds poses significant difficulties, we propose a multimodal fusion semantic segmentation network (MFSS) for power tower semantic segmentation and inclination detection. First, effective near-ground filtering and fixed-area slicing algorithms are proposed to address the issues of sample imbalance and insufficient data. Second, MFSS integrates RGB information and point cloud features to enhance the descriptive ability of the tower. Finally, a novel inclination detection method for distribution towers is proposed, estimating tower tilt from the axis between top and bottom centroids to improve accuracy and stability. Experimental results on our constructed dataset show that the proposed method outperforms existing algorithms, achieving 77.3% IoU and 96.69% per-class accuracy in tower segmentation. The mean angle deviation for tilt detection is 0.78∘, with a state judgment false rate of just 2.4%.
+</p>
+
+<li><p><strong>R. Du [杜瑞], H.Zhang* [张辉], H. Zhong et al “CLMFNet: Cross-Level Multimodal Fusion Network for RGB-T Semantic Segmentation of Distribution Network Lines”, IEEE Transactions on Industrial Informatics, 2025. 10.1109/TII.2025.3578136. </strong></p>
+        <p><strong>论文链接:</strong> <a href="https://ieeexplore.ieee.org/document/11050945
+"></a>https://ieeexplore.ieee.org/document/11050945
+</p>
+    <p><strong>摘要: </strong>准确的语义分割在配电线路监测中至关重要，以确保系统的可靠性和安全性。由于环境的复杂性和设备的多样性，单一模态图像（如RGB图像）难以提供足够的信息以实现有效的分割。为应对这些挑战，利用RGB与热红外（TIR）图像的互补性显著提升了分割性能。因此，提出了一种创新性的跨层多模态融合网络（CLMFNet），通过融合RGB和TIR数据来提高语义分割的准确性和鲁棒性。CLMFNet采用双分支架构以提取RGB和TIR图像的特征，并通过多模态融合策略对其进行有效整合。此外，引入了一种跨层引导机制，以促进不同层级特征的互补与优化。CLMFNet在自建的RGB-T数据集上进行了验证，实验结果表明，在平均准确率（mAcc）和平均交并比（mIoU）等关键指标上均优于现有先进方法，展示了其在复杂配电场景中进行语义分割的有效性。
+</p>
+    <p><strong>Abstract: </strong> Accurate semantic segmentation is crucial in distribution network line monitoring to ensure the system’s reliability and security. Due to the complexity of the environment and the diversity of devices, unimodal images (such as RGB images) struggle to provide enough information for effective segmentation. To address these challenges, the complementary nature of RGB and thermal infrared (TIR) images is leveraged to significantly enhance segmentation performance. Therefore, an innovative cross-level multimodal fusion network (CLMFNet) is proposed to improve the accuracy and robustness of semantic segmentation by integrating RGB and TIR data. A dual-branch architecture is employed in CLMFNet to extract features from both RGB and TIR images, which are then effectively integrated through a multimodal fusion strategy. Additionally, a cross-layer guidance mechanism is introduced to facilitate the complementation and optimization of features across different levels. CLMFNet was validated on a custom RGB-T dataset, and experimental results showed that it outperformed state-of-the-art methods in key metrics such as mean accuracy (mAcc) and mean intersection over union (mIoU), demonstrating its effectiveness in performing semantic segmentation in complex power distribution scenarios.
+ </p>
+
+<li><p><strong>R. Du [杜瑞], H.Zhang* [张辉], H. Zhong et al "VSLNet: Multimodal Data Fusion Network for Tree Species Classification in Overhead Transmission Line Corridors," in IEEE Transactions on Industrial Informatics, vol. 21, no. 2, pp. 1100-1109, Feb. 2025. </strong></p>
+        <p><strong>论文链接:</strong> <a href="https://ieeexplore.ieee.org/document/10740790
+"></a>https://ieeexplore.ieee.org/document/10740790
+</p>
+    <p><strong>摘要: </strong>对架空输电线路（OHTL）树种进行分类具有重要意义，有助于及时排除树木对电力线路构成的安全隐患。针对OHTL线路树种分类中目标形态细微差异、目标密集分布以及单一模态数据表征能力有限等挑战，本文提出了一种基于多模态数据融合的树种分类网络VSLNet。VSLNet构建了三个非对称分支，在光谱信息处理过程中自动选择更具判别力的特征，并共同引导所提取的可见光信息，确保全局与局部一致性，实现准确的多光谱分类。此外，在LiDAR数据处理中，个体树木的分割为分类提供了树高和冠幅等数据，并将GPS数据与多光谱分类结果无缝融合。实验结果表明，VSLNet是一种可行且可靠的树种分类解决方案，具有应用于其他多模态任务的潜力。
+    </p>
+    <p><strong>Abstract: </strong> The classification of tree species for overhead transmission lines (OHTL) is of great significance, facilitating the the timely removal of safety hazards posed by trees on power lines. Addressing the challenges in classifying OHTL line tree species, including subtle differences in target shape appearance, densely distributed targets, and limited representation in single-modal data, this article proposes a tree species classification network, VSLNet, based on multimodal data fusion. VSLNet constructs three asymmetric branches, which automatically select more discriminative features among spectra during spectral information processing, and jointly guide the extracted visible light information, ensuring global and local consistency for accurate multispectral classification. Furthermore, in LiDAR processing, the segmentation of individual trees contributes data such as tree height and crown diameter, and seamlessly integrates GPS data with multispectral classification results. Experimental results demonstrate that VSLNet is a feasible and reliable solution for tree classification, with potential applicability to other multimodal tasks.
+    </p>
+
+
+<li><p><strong>B. Biekezati[别克扎提·巴合提], H. Zhang* [张辉], et al, "Reliable Wind Turbine Blade Performance Monitoring System " in IEEE Transactions on Reliability, doi: 10.1109/TR.2024.3509442. </strong></p>
+        <p><strong>论文链接:</strong> <a href="https://ieeexplore.ieee.org/document/10811663
+"></a>https://ieeexplore.ieee.org/document/10811663
+</p>
+    <p><strong>摘要: </strong>风力涡轮机已成为一种重要且环保的能源发电解决方案。然而，随着新型材料的广泛应用，确保这些设备的可靠性已成为一个关键问题。开发高效且具成本效益的风力涡轮机叶片（WTBs）监测方法，作为风力涡轮机中最昂贵的部件，已成为研究的重点。本文提出了一种采用基于医学听诊方法的深度卷积神经网络的WTBs新型监测系统，旨在兼顾经济性与工程可靠性。首先，提出了一种基于边缘计算的轻量级WTBs监测框架，利用风力涡轮机可编程逻辑控制器输出信号，有效采集相关的气动音频信号并滤除无关数据。其次，提出了一套音频增强算法，采用多尺度特征提取、自适应掩膜定位和深度神经网络，降低WTBs产生的音频信号噪声。第三，提出了一种新的深度卷积神经网络压缩方法，使其适用于资源受限的边缘计算设备，并高效利用音频生成的频谱图对WTBs故障进行诊断。
+</p>
+    <p><strong>Abstract: </strong> Wind turbines have emerged as a prominent and environmentally friendly energy generation solution. However, with the widespread use of new materials, ensuring the reliability of these devices has become as a critical issue. Developing efficient and cost-effective monitoring methods for the wind turbine's blades (WTBs), the most expensive components of wind turbine, has become a focal point of research. In this article, we present a novel monitoring system for WTBs that employs a deep convolutional neural network approach based on the medical auscultatory method. The system is designed to balance economic efficiency and engineering reliability. First, we proposed a lightweight WTBs monitoring framework based on edge computing that leverages the signals from the programmable logic controller output of wind turbine to enable efficient collection of relevant aerodynamic audio signals while filtering out irrelevant data. Second, we present a set of audio enhancement algorithms that employ multiscale feature extraction, self-adaptive mask targeting, and deep neural networks to reduce noise in the audio signals generated by WTBs. Third, we introduce a new approach for compressing deep convolution neural networks that makes them suitable for resource-constrained edge computing devices and efficiently utilizes audio-generated spectrograms to diagnose faults in WTBs.
+</p>
+
+<li><p><strong>张辉, 杜瑞, 钟杭, 曹意宏, 王耀南. 电力设施多模态精细化机器人巡检关键技术及应用. 自动化学报, 2025, 51(1): 20−42 doi: 10.16383/j.aas.c230809 </strong></p>
+        <p><strong>论文链接:</strong> <a href="http://www.aas.net.cn/cn/article/doi/10.16383/j.aas.c230809
+"></a>http://www.aas.net.cn/cn/article/doi/10.16383/j.aas.c230809
+</p>
+    <p><strong>摘要: </strong> 电力设施巡检对于加快电网基础设施智能化改造和智能微电网建设, 提高电力系统互补互济和智能调节能力的需求具有重要作用. 近年来, 智能巡检机器人开始在电力巡检中广泛应用, 在提高电力设施巡检效率和准确性、提升安全性、降低成本和促进电力智能化发展等方面发挥关键作用. 本文从电力巡检机器人的智能感知和导航技术出发, 重点介绍目标检测、语义分割、自主导航等共性关键技术的国内外发展现状. 然后以可见光红外双光融合、可见光图像和点云数据融合、声纹和可见光融合为例, 阐述电力场景多模态数据融合方式. 并进一步介绍电力部件精准分割和异物检测、线路点云杆塔倾斜检测、输电线路覆冰多模态检测和电力架空线路缺陷分析及台账异常检测等电力设施多模态机器人相关案例. 最后探讨电力设施多模态精细化机器人巡检关键技术的发展趋势和所面临的挑战.
+    </p>
+    <p><strong>Abstract: </strong> Power facilities inspection plays an important role in accelerating the intelligent transformation of power grid infrastructure and the construction of intelligent microgrid, and improving the complementary and intelligent adjustment ability of power system. In recent years, intelligent inspection robots have been widely used in power inspection. They play a key role in improving the efficiency and accuracy of power facilities inspection, improving safety, reducing costs and promoting the development of power intelligence. This paper starts from the intelligent perception and navigation technology of power inspection robots. This paper focuses on the development status of common key technologies such as target detection, semantic segmentation and autonomous navigation at home and abroad, and then takes visible light infrared dual-light fusion, visible light image and point cloud data fusion, voiceprint and visible light fusion as examples. This paper expounds the multi-modal data fusion method of power scene, and further introduces the related cases of multi-modal robots for power facilities, such as accurate segmentation and foreign body detection of power components, tilt detection of line point cloud towers, multi-modal detection of transmission line icing, defect analysis of power overhead lines and abnormal detection of ledgers, etc.. Finally, the development trend and challenges of key technologies for multi-modal fine robot inspection of power facilities are discussed.
+    </p>
+
 <li><p><strong>Y. Cao [曹意宏], H. Zhang* [张辉], X. Lu, Y. Chen, Z. Xiao and Y. Wang, "Adaptive Refining-Aggregation-Separation Framework for Unsupervised Domain Adaptation Semantic Segmentation," in IEEE Transactions on Circuits and Systems for Video Technology, doi: 10.1109/TCSVT.2023.3243402. （格式参考，组内学生需加上中文，并标注通讯作者）
 </strong></p>
         <p><strong>论文链接:</strong> <a href="https://ieeexplore.ieee.org/abstract/document/10040699">https://ieeexplore.ieee.org/abstract/document/10040699</a></p>
@@ -336,17 +383,7 @@ python train_UDA.py --source_dataset "gta5" --num_classes 19 --backbone "resnet1
         <p><strong>摘要:</strong> 无监督领域自适应作为一种解决语义分割任务标记困难的有前景的方法引起了广泛关注。它使用易于获得的标记虚拟源图像为未标记的真实目标图像训练分割网络。为了提高性能，使用聚类来获得域不变特征表示。然而，大多数基于聚类的方法不加选择地对两个域中按类别映射的所有特征进行聚类，导致质心偏移并影响鉴别特征的生成。我们提出了一种新的基于聚类的方法，该方法使用自适应细化聚合分离框架，通过为不同的域和特征设计不同的自适应方案来学习判别特征。聚类不需要任何可调阈值。为了更准确地估计域不变质心，我们设计了不同的方法来指导不同域特征的自适应细化。提出了一种直接评估目标特征置信度的方法，以解决目标标签缺失的问题。我们引入了一种域平衡聚合损失和两种分别用于距离和相似性的自适应分离损失，它们可以通过结合细化策略来区分聚类特征，从而提高分割性能。在GTA 5→Cityscapes和SYNTHIA→Cityscape基准上的实验结果表明，我们的方法优于现有的最先进的方法。</p>
         <p><strong>Abstract:</strong> Unsupervised domain adaptation has attracted widespread attention as a promising method to solve the labeling difficulties of semantic segmentation tasks. It trains a segmentation network for unlabeled real target images using easily available labeled virtual source images. To improve performance, clustering is used to obtain domain-invariant feature representations. However, most clustering-based methods indiscriminately cluster all features mapped by category from both domains, causing the centroid shift and affecting the generation of discriminative features. We propose a novel clustering-based method that uses an adaptive refining-aggregation-separation framework, which learns the discriminative features by designing different adaptive schemes for different domains and features. The clustering does not require any tunable thresholds. To estimate more accurate domain-invariant centroids, we design different ways to guide the adaptive refinement of different domain features. A critic is proposed to directly evaluate the confidence of target features to solve the absence of target labels. We introduce a domain-balanced aggregation loss and two adaptive separation losses for distance and similarity respectively, which can discriminate clustering features by combining the refinement strategy to improve segmentation performance. Experimental results on GTA5→Cityscapes and SYNTHIA→Cityscapes benchmarks show that our method outperforms existing state-of-the-art methods.</p>
 
-  <li><p><strong>Y. Cao [曹意宏], H. Zhang* [张辉], X. Lu, Z. Xiao, K. Yang and Y. Wang, "Towards Source-Free Domain Adaptive Semantic Segmentation Via Importance-Aware and Prototype-Contrast Learning," in IEEE Transactions on Intelligent Vehicles, doi: 10.1109/TIV.2024.3383157.</strong></p>
-        <p><strong>论文链接:</strong> <a href="https://ieeexplore.ieee.org/abstract/document/10485494
-"></a>https://ieeexplore.ieee.org/abstract/document/10485494
-</p>
-        <p><strong>代码链接:</strong> <a href="https://github.com/yihong-97/Source-free-IAPC
-"></a>https://github.com/yihong-97/Source-free-IAPC
-</p>
-        <p><strong>摘要:</strong>域自适应语义分割可以在现实世界驾驶场景中实现强大的像素级理解。作为一种更实用的技术，无源域域适应解决了传统无监督域适应方法中数据隐私和存储限制的关注，这使其在智能车辆的背景下尤为重要。它利用训练有素的源模型和未标记的目标数据来实现目标域中的适应性。但是，在没有源数据和目标标签的情况下，当前解决方案无法充分降低域移动的影响并从目标数据中充分利用信息。在本文中，我们提出了一种通过重要性感知和原型对比度（IAPC）学习，提出了一种无端到端的无源域适应语义分割方法。提出的IAPC框架有效地从训练有素的源模型中提取了域不变知识，并从未标记的目标域中学习了特定于域的知识。具体而言，考虑到源模型对目标域预测的域移位问题，我们提出了一种重要的意识性机制，用于从源模型中提取域不变知识的有偏目标预测概率分布。我们进一步引入了一种原型对比策略，其中包括原型对称交叉熵损失和原型增强交叉熵损失，以学习目标内域知识而不依赖标签。在两个域自适应语义分割基准上进行的各种实验表明，所提出的端到端IAPC解决方案的表现优于现有的最新方法。源代码可在https://github.com/yihong-97/source-free-iapc上公开获得
-</p>
-        <p><strong>Abstract:</strong>Domain adaptive semantic segmentation enables robust pixel- wise understanding in real-world driving scenes. Source-free domain adaptation, as a more practical technique, addresses the concerns of data privacy and storage limitations in typical unsupervised domain adaptation methods, making it especially relevant in the context of intelligent vehicles. It utilizes a well-trained source model and unlabeled target data to achieve adaptation in the target domain. However, in the absence of source data and target labels, current solutions cannot sufficiently reduce the impact of domain shift and fully leverage the information from the target data. In this paper, we propose an end-to-end source-free domain adaptation semantic segmentation method via Importance-Aware and Prototype-Contrast (IAPC) learning. The proposed IAPC framework effectively extracts domain-invariant knowledge from the well-trained source model and learns domain-specific knowledge from the unlabeled target domain. Specifically, considering the problem of domain shift in the prediction of the target domain by the source model, we put forward an importance-aware mechanism for the biased target prediction probability distribution to extract domain-invariant knowledge from the source model. We further introduce a prototype-contrast strategy, which includes a prototype-symmetric cross-entropy loss and a prototype-enhanced cross-entropy loss, to learn target intra-domain knowledge without relying on labels. A comprehensive variety of experiments on two domain adaptive semantic segmentation benchmarks demonstrates that the proposed end-to-end IAPC solution outperforms existing state-of-the-art methods. The source code is publicly available at  https://github.com/yihong-97/Source-free-IAPC .
-</p>
+
     <li><p><strong>H. Zhang* [张辉], J. Tang [唐珺琨], Y. Cao, Y. Chen, Y. Wang and Q. M. J. Wu, "Cycle Consistency Based Pseudo Label and Fine Alignment for Unsupervised Domain Adaptation," in IEEE Transactions on Multimedia, doi: 10.1109/TMM.2022.3233306.
 </strong></p>
         <p><strong>论文链接:</strong> <a href="https://ieeexplore.ieee.org/abstract/document/10004010
@@ -410,7 +447,49 @@ python train_UDA.py --source_dataset "gta5" --num_classes 19 --backbone "resnet1
 </p>
         <p><strong>Abstract:</strong>In order to solve the problems of network skew, small sample data misdetection and missing detection in small sample target detection algorithm, a foreign body identification method of distribution line based on small sample target detection is proposed. Firstly, the network skew phenomenon is solved by introducing attention mechanism in transfer training. Secondly, the method of online difficulty sample selection is proposed. Solve the problem of small sample classification and small size foreign body misdetection and missing detection. Thirdly, internal convolution is used to solve the traditional convolution problem and improve the accuracy of foreign body detection. Thirdly, a new anchor frame scheme is proposed to solve the problem of inaccurate positioning of small size foreign objects. Finally, a distribution line foreign body data set is constructed. Compared with the previous advanced algorithms, the detection accuracy of the proposed method on the distribution line foreign body detection data set is increased by 4.4%, reaching 98.6%, and has excellent performance.</p>
 
-  <li><p><strong></strong>张辉,刘优武等. 一种基于边界分布注意力的医药质量检测方法及系统[P]. 湖南省：CN115841481A,2023-03-24.（实审）
+<li><p><strong>张辉,杜瑞,曹意宏,别克扎提·巴合提等. 基于跨层级引导融合的多模态图像语义分割方法及系统[P]. 湖南省：CN202411346191.7,2025-02-11（授权）</strong>
+</p>
+        <p><strong>摘要:</strong>本发明公开了一种基于跨层级引导融合的多模态图像语义分割方法及系统,该方法利用RGB影像信息和深度信息、热成像信息和光谱信息等额外模态图像信息的多模态数据,融合多模态信息并用于图像语义分割任务。该方法先将额外模态图像转换成和RGB图像同样的尺寸大小和视觉范围,再使用基于Transformer基本块的双分支编码器提取RGB模态和额外模态特征,通过跨层级引导融合模块在浅层、中层、高层特征中利用低层级特征引导高层级特征的多模态融合,最后利用解码器对多级融合特征解码,并逐像素点输出图像的类别,解决了在复杂场景下语义分割表现不佳的问题；本发明技术方案可应用于机器人智能分拣、无人机智能巡检等复杂场景。
+</p>
+
+<li><p><strong>	张辉,曹意宏,肖正,杜瑞等. 伪标签生成及无源域场景自适应的遮挡感知无缝分割方法及系统[P]. 湖南省：	CN202411943039.7,2025-03-11（授权）</strong>
+</p>
+        <p><strong>摘要:</strong>本发明公开了一种伪标签生成及无源域场景自适应的遮挡感知无缝分割方法及系统,该方法通过为常规使用的实例级伪标签通过阈值筛选和数据量的对比,进一步提升伪标签的标记精度；同时利用生成的伪标签,并设计一种针对遮挡感知无缝分割任务中实例级预测分支的不确定区域引导的加权损失,提升分割模型的准确度；再结合对低质量伪标签的筛选,提出一种非模态引导的实例混合策略,从而进一步的增加可供训练的样本数量；从而提高由于个别类别样本数量少导致的最终训练的模型分割效果差的问题,最终提高无源域场景自适应效果。
+ </p>
+
+
+<li><p><strong>张辉,杜瑞,别克扎提·巴合提,曹意宏等. 一种RGB-T图像多模态语义分割方法及系统[P]. 湖南省：CN202510661107.9,2025-06-20（实审）</strong>
+</p>
+        <p><strong>摘要:</strong>本发明公开了一种RGB-T图像多模态语义分割方法及系统,该方法使用莫比乌斯变换替代传统线性变换,其中,采用双分支结构分别提取RGB-T图像特征,每个分支均设有多个依次连接的莫比乌斯自注意力层；在特征融合层引入莫比乌斯交叉注意力融合层融合RGB-T图像特征得到多尺度特征,接着空间解码器通过上采样操作对齐不同层级的多尺度特征的分辨率,再融合多个层级的多尺度特征后投影到类别空间,通过Softmax函数生成分割预测结果。本发明技术方案构建的莫比乌斯注意力机制能够在双曲空间中对多模态特征进行非线性映射,更有效地应对模态差异和边缘畸变,提升模型对多模态特征融合的适应性和融合精度。
+</p>
+
+<li><p><strong>	张辉,张羽宏宣,别克扎提·巴合提,邱宇等. 一种RGB-T图像多模态语义分割方法及系统[P]. 湖南省：CN202510661107.9,2025-01-24（实审）</strong>
+</p>
+        <p><strong>摘要:</strong>本发明公开了一种基于孪生神经网络的时间序列相似度度量方法及终端,对时间序列数据样本进行两两分组配对为时间序列样本对并标注标签,将经过配对标注后的时间序列样本对输入到使用相同预训练大模型为分支的孪生神经网络中,得出时间序列间的相似度作为网络整体最终的输出,利用损失函数更新整个孪生神经网络与微调预训练大模型结合的网络权重。本发明针对小样本场景下的时间序列数据相似度度量任务,利用预训练大模型在时间序列领域表现出的强大能力,结合孪生神经网络在小样本相似度度量的优势,进行时间序列数据的相似度度量,只需要少量样本即可完成时间序列相似度的度量,能够全方位提取时间序列的特征,作为相似度度量的依据。
+</p>
+
+<li><p><strong>	张辉,杜瑞,别克扎提·巴合提,曹意宏等. 一种基于有监督学习的输电线路树木分割方法及系统[P]. 湖南省：	CN202411426418.9,2025-01-31（实审）</strong>
+</p>
+        <p><strong>摘要:</strong>本发明公开了一种基于有监督学习的输电线路树木分割方法及系统,包括：获取沿输电线路通道采集的点云数据；利用点云数据构建邻接图；将邻接图输入构建的图神经网络模型得到特征空间参量再映射到单木实例标签空间得到单木实例标签概率分布,再以最大概率的单木实例标签的预测值作为对应点的单木分割预测结果；其中,通过采集点云数据样本以及点的单木实例标签的实际值,进而依据单木实例标签的预测值与单木实例标签的实际值进行有监督学习训练。本发明通过构建邻接图引入了点云数据的几何关系,使用图卷积网络能够捕捉局、全局特征,利用单木实例标签信息进行有监督训练,使模型能够学习并区分不同树木的点云特征,提高单木分割的精度和效率。
+</p>
+
+<li><p><strong>	张辉,吴读桑,曹意宏,杜瑞等. 一种基于注意力融合的视频场景理解方法及系统[P]. 湖南省：	CN202411276866.5,2024-12-27（实审）</strong>
+</p>
+        <p><strong>摘要:</strong>本发明公开了一种基于注意力融合的视频场景理解方法及系统,该方法将多维度注意力融合模块加入骨干网络构建出行人视频场景下的识别网络,如行人动作识别网络,其中,多维度注意力融合模块是将通道,时间,空间三个维度独立计算各自注意力再进行融合；进而获取视频数据集中每帧图像的行人数据,再利用视频数据集中每帧图像的行人数据训练行人视频场景下的识别网络；最后,利用训练好的行人视频场景下的识别网络,对待检测视频进行视频理解,如输出行人动作类型。本发明技术方案块既单独使用了注意力信息使得各类注意力信息最有效利用,又使注意力信息在时空两个维度进行了整合,得到更全面的信息,增强时序信息利用,提升视频场景理解能力。
+</p>
+
+<li><p><strong>张辉,刘航,别克扎提·巴合提,曹意宏等. 一种基于实例分割的路面病害智能检测方法及系统[P]. 湖南省：	CN202411149687.5,CN202411149687.5（实审）</strong>
+</p>
+        <p><strong>摘要:</strong>本发明公开一种基于实例分割的路面病害智能检测方法及系统,利用线阵相机采集包含路面病害的图像数据,通过自适应直方图均衡化对所采集的图像数据进行预处理；建立多层级特征提取网络提取图像数据中的全局特征,输出多尺度特征图；采用空间-通道注意力机制对多尺度特征图进行处理,增强其特征信息,使目标区域充分激活；通过采用转置卷积上采样的路径聚合金字塔网络对多尺度特征图进行特征融合,将金字塔网络的输出特征通过自适应增强机制进一步增强；将增强后的多尺度特征图进行模型训练；使用优化好的实例分割模型对采集的多张路面图像进行预测。本发明解决了现有的路面病害检测方法的局限性,提升路面病害检测精度、解决跨图病害识别等难点。
+</p>
+
+<li><p><strong>张辉,朱嘉明等. 基于预训练大语言模型的多变量源荷数据预测方法及系统[P]. 湖南省：	CN202411943114.X,2025-03-28（授权）</strong>
+</p>
+        <p><strong>摘要:</strong>本发明公开了基于预训练大语言模型的多变量源荷数据预测方法及系统,将历史源荷时序序列进行文本化编码,混合使用低秩矩阵适配法与适配器法形成基于多专家的混合微调模块的预训练大语言模型,进而得到初步预测时序序列,最后进行滤波校准,其中,基于待预测变量与其余变量之间的互相关选出相关性更高的变量为超前变量；针对初步预测时序序列中超前变量与待预测变量数据进行滤波,进而进行整合得到对于初步预测时序序列的校准偏差,用于校准。本发明在大语言模型的基础上进行微调,能够在小样本、多变量条件下,完成不同类型的源荷时序序列预测任务,利用了变量间的超前滞后关系,对待预测变量进行提示和引导操作,提高源荷预测准确性和可靠性。
+</p>
+
+
+    <li><p><strong>张辉,刘优武等. 一种基于边界分布注意力的医药质量检测方法及系统[P]. 湖南省：CN115841481A,2023-03-24.（实审）</strong>
 </p>
         <p><strong>摘要:</strong>本发明公开了一种基于边界分布注意力的医药质量检测方法及系统,其包括：构造数据集,即对目标液体图像上可见异物的位置以及类别进行标定；构建包含特征提取网络、特征融合网络以及边界分布注意力检测头网络的神经网络模型；其中,边界分布注意力检测头网络的输出为每个像素点所属的类别以及以每个像素点为中心点的回归框的四条边界到中心点的距离,所述类别为可见异物类别或背景；利用数据集训练神经网络模型；将待检测的目标液体图像输入训练后的所述神经网络模型得到可见异物的检测结果。本发明技术方案创造性地设计出包含边界分布注意力检测头网络的神经网络,能够分析回归框的每条边界分布的重要程度,进而指导像素点分类,降低误检率。
 </p>
@@ -490,12 +569,28 @@ python train_UDA.py --source_dataset "gta5" --num_classes 19 --backbone "resnet1
 <hr>
   <h2>项目组成员</h2>
   <div style="display: flex;">
+
+    <div class="picItem">
+      <img src=./img/qiuyu.jpg width="120px" height="150px">
+      <p >邱宇 副教授</p>
+      <p >青年教师</p>
+      <p >计算机视觉</p>
+    </div>
+
+    <div class="picItem">
+      <img src=./img/niutongzhi.png width="120px" height="150px">
+      <p >牛通之 博士</p>
+      <p >在站博士后</p>
+      <p >工业检测</p>
+    </div>
+
     <div class="picItem">
       <img src=./img/caoyihong.jpeg width="120px" height="150px">
-      <p >曹意宏</p>
-      <p >2021级博士在读</p>
+      <p >曹意宏 博士</p>
+      <p >合作研究 </p>
       <p >多场景自适应</p>
     </div>
+
     <div class="picItem">
       <img src=./img/durui.png width="120px" height="150px">
       <p >杜瑞</p>
@@ -503,10 +598,17 @@ python train_UDA.py --source_dataset "gta5" --num_classes 19 --backbone "resnet1
       <p >点云识别与处理</p>
     </div>
     <div class="picItem">
-      <img src=./img/bieke.png width="120px" height="150px">
+      <img src=./img/bieke.jpg width="120px" height="150px">
       <p >别克扎提·巴合提</p>
       <p >2023级博士在读</p>
       <p >机器视觉与工程应用</p>
+    </div>
+
+    <div class="picItem">
+      <img src=./img/chenhouquan.jpg width="120px" height="150px">
+      <p >陈厚权</p>
+      <p >2025级博士在读</p>
+      <p >视觉大模型</p>
     </div>
 <!--    <div class="picItem">-->
 <!--      <img src=./img/liuyouwu.png width="120px" height="150px">-->
@@ -520,24 +622,24 @@ python train_UDA.py --source_dataset "gta5" --num_classes 19 --backbone "resnet1
 <!--      <p >2021级硕士在读</p>-->
 <!--      <p >双光目标检测</p>-->
 <!--    </div>-->
-    <div class="picItem">
-      <img src=./img/zhaowei.png width="120px" height="150px">
-      <p >赵伟</p>
-      <p >2022级硕士在读</p>
-      <p >高光谱图像分析</p>
-    </div>
-    <div class="picItem">
-      <img src=./img/liuyu.png width="120px" height="150px">
-      <p >刘宇</p>
-      <p >2022级硕士在读</p>
-      <p >点云语义分割</p>
-    </div>
-    <div class="picItem">
-      <img src=./img/liangzhijia.png width="120px" height="150px">
-      <p >梁志佳</p>
-      <p >2022级硕士在读</p>
-      <p >小样本目标检测</p>
-    </div>
+<!--    <div class="picItem">-->
+<!--      <img src=./img/zhaowei.png width="120px" height="150px">-->
+<!--      <p >赵伟</p>-->
+<!--      <p >2022级硕士在读</p>-->
+<!--      <p >高光谱图像分析</p>-->
+<!--    </div>-->
+<!--    <div class="picItem">-->
+<!--      <img src=./img/liuyu.png width="120px" height="150px">-->
+<!--      <p >刘宇</p>-->
+<!--      <p >2022级硕士在读</p>-->
+<!--      <p >点云语义分割</p>-->
+<!--    </div>-->
+<!--    <div class="picItem">-->
+<!--      <img src=./img/liangzhijia.png width="120px" height="150px">-->
+<!--      <p >梁志佳</p>-->
+<!--      <p >2022级硕士在读</p>-->
+<!--      <p >小样本目标检测</p>-->
+<!--    </div>-->
     <div class="picItem">
       <img src=./img/liuhang.jpg width="120px" height="150px">
       <p >刘航</p>
@@ -552,9 +654,37 @@ python train_UDA.py --source_dataset "gta5" --num_classes 19 --backbone "resnet1
     </div>
     <div class="picItem">
       <img src=./img/wudousang.jpg width="120px" height="150px">
-      <p >唐友源</p>
+      <p >吴读桑</p>
       <p >2023级硕士在读</p>
       <p >动作识别与视频理解</p>
+    </div>
+
+    <div class="picItem">
+      <img src=./img/zhangyuhongxuan.jpg width="120px" height="150px">
+      <p >张羽宏宣</p>
+      <p >2024级硕士在读</p>
+      <p >时序预测</p>
+    </div>
+
+    <div class="picItem">
+      <img src=./img/yanxingyu.jpg width="120px" height="150px">
+      <p >颜星雨</p>
+      <p >2024级硕士在读</p>
+      <p >时序预测</p>
+    </div>
+
+    <div class="picItem">
+      <img src=./img/wangziyang.jpg width="120px" height="150px">
+      <p >王梓洋</p>
+      <p >2025级硕士在读</p>
+      <p >大模型微调</p>
+    </div>
+
+     <div class="picItem">
+      <img src=./img/wuhongyi.jpg width="120px" height="150px">
+      <p >吴虹邑</p>
+      <p >2025级硕士在读</p>
+      <p >除冰机器人</p>
     </div>
 
   </div>
@@ -562,7 +692,7 @@ python train_UDA.py --source_dataset "gta5" --num_classes 19 --backbone "resnet1
   <h2>学术&活动</h2>
     <div style="display: flex;">
       <div class="picItem">
-        <img src=./img/competition.png width="300px" height="230px">
+        <img src=./img/competition1.jpg width="300px" height="230px">
         <p >学术竞赛</p>
       </div>
       <div class="picItem">
@@ -574,12 +704,20 @@ python train_UDA.py --source_dataset "gta5" --num_classes 19 --backbone "resnet1
         <p >校企合作</p>
       </div>
       <div class="picItem">
-        <img src=./img/meeting.png width="300px" height="230px">
+        <img src=./img/lunch.jpg width="300px" height="230px">
         <p >团建活动</p>
+      </div>
+      <div class="picItem">
+        <img src=./img/hezhao1.jpg width="300px" height="230px">
+        <p >毕业合照</p>
+      </div>
+      <div class="picItem">
+        <img src=./img/hezhao2.png width="300px" height="230px">
+        <p >毕业合照</p>
       </div>
     </div>
   <hr>
-  <p><b>如果您对此领域感兴趣并想加入我们的研究, 请联系我们(caoyihong@hnu.edu.cn; durui@hnu.edu.cn)或者张辉教授(zhanghuihby@126.com).谢谢!<b></p>
+  <p><b>如果您对此领域感兴趣并想加入我们的研究, 请联系我们(buick951227@163.com(别克扎提); durui@hnu.edu.cn(杜瑞); ai4modal@126.com(多模态组))或者张辉教授(zhanghuihby@126.com).谢谢!<b></p>
 </td>
 </tr>
 </table>
